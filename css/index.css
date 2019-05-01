@@ -157,8 +157,12 @@ body {
 .container #foot-nav a {
   padding: 0.7rem;
 }
-.container IMG {
-  max-width: 10%;
+.container #profile-pic {
+  background: gray;
+}
+.container #profile-pic .profile-pic {
+  max-width: 100%;
+  width: 10%;
   height: auto;
 }
 .container h2 {
