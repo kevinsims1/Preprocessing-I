@@ -155,7 +155,7 @@ body {
   flex-direction: column;
 }
 .container #foot-nav a {
-  padding: 0.7rem;
+  padding: 0.6rem;
 }
 .container #profile-pic {
   background: gray;
@@ -177,6 +177,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-.container p {
+.container p,
+.container ul,
+.container #contact-form {
   padding: 0.6rem;
 }

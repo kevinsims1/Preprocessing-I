@@ -58,6 +58,7 @@ html, body {
 }
 
 @favorite-color: blue;
+@text-padding: .6rem;
 
 .container {
 	font-size: 62.5%;
@@ -79,7 +80,7 @@ html, body {
 		display: flex;
 		flex-direction: column;
 		a {
-			padding: .7rem;
+			padding: @text-padding;
 		}
 	}
 
@@ -107,10 +108,11 @@ html, body {
 		flex-direction: column;
 	}
 
-	p {
-		padding: .6rem;
+	p, ul, #contact-form {
+		padding: @text-padding
 	}
 }
+
 
 
 
