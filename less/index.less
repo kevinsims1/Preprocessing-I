@@ -57,28 +57,41 @@ html, body {
     height: 100%;
 }
 
+@favorite-color: blue;
+
 .container {
 	font-size: 62.5%;
 	margin: 0 auto;
-	padding: .3rem;
+	padding: 1.5rem;
 	nav {
 		display: flex;
 		justify-content: flex-end;
-		padding-left: 10px;
+		padding-left: 1.6rem;
 		width: 80%;
 		align-content: space-around;
 		a {
-		padding: 10px;
+		padding: 1rem;
+		color: @favorite-color;
 		}
 	}
-	.profile-pic {
-		height: 3rem;
-		width: 3rem;
+
+	#foot-nav {
+		display: flex;
+		flex-direction: column;
+		a {
+			padding: .7rem;
+		}
 	}
-	
+
+	IMG {
+		max-width: 10%;
+		height: auto;
+	}
+
 	h2 {
 		font-size: 1.2rem;
 		padding: .6rem;
+		color: @favorite-color;
 	}
 	.top-p {
 		display: flex;
@@ -86,11 +99,13 @@ html, body {
 
 	.mid-sec {
 		.top-p;
+		flex-direction: column;
 	}
 
 	p {
 		padding: .6rem;
 	}
 }
+
 
 

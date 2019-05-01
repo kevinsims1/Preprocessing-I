@@ -23,7 +23,7 @@
       </nav>
     </header>
 
-    <img src="kev-img.JPG">
+    <img src="kev-img.JPG" class="profile-pic">
     <body>
       <div class="container about-page">
         <section class="top-p">
@@ -57,14 +57,21 @@
        
           <h2>Contact</h2>
 
-          <p>Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p> 
+            <form id="contact-form">
+              <input name='name' type='text' class="form-control" placeholder="your name" required><br/>
 
+              <input name="email" type="email" class="form-control" placeholder="your email" required><br/>
+
+              <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br/>
+
+              <input type="submit" class="form-control submit" value="Send Message">
+            </form>
           </div>
 
         </section>
           
         <footer>
-          <nav>
+          <nav id="foot-nav">
             <a href="">Home</a>
             <a href="#">About</a>
             <a href="#">Blog</a>
