@@ -64,6 +64,7 @@ html, body {
 	font-size: 62.5%;
 	margin: 0 auto;
 	padding: 1.5rem;
+
 	nav {
 		display: flex;
 		justify-content: flex-end;
@@ -81,6 +82,9 @@ html, body {
 		flex-direction: column;
 		a {
 			padding: @text-padding;
+		}
+		@media (max-width: 500px) {
+			display: none;
 		}
 	}
 
@@ -101,6 +105,10 @@ html, body {
 	}
 	.top-p {
 		display: flex;
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	.mid-sec {

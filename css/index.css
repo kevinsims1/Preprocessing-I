@@ -157,6 +157,11 @@ body {
 .container #foot-nav a {
   padding: 0.6rem;
 }
+@media (max-width: 500px) {
+  .container #foot-nav {
+    display: none;
+  }
+}
 .container #profile-pic {
   background: gray;
 }
@@ -173,9 +178,21 @@ body {
 .container .top-p {
   display: flex;
 }
+@media (max-width: 500px) {
+  .container .top-p {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container .mid-sec {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .container .mid-sec {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container p,
 .container ul,
