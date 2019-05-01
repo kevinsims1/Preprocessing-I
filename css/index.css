@@ -134,3 +134,35 @@ html,
 body {
   height: 100%;
 }
+.container {
+  font-size: 62.5%;
+  margin: 0 auto;
+  padding: 0.3rem;
+}
+.container nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 10px;
+  width: 80%;
+  align-content: space-around;
+}
+.container nav a {
+  padding: 10px;
+}
+.container .profile-pic {
+  height: 3rem;
+  width: 3rem;
+}
+.container h2 {
+  font-size: 1.2rem;
+  padding: 0.6rem;
+}
+.container .top-p {
+  display: flex;
+}
+.container .mid-sec {
+  display: flex;
+}
+.container p {
+  padding: 0.6rem;
+}
