@@ -57,3 +57,77 @@ html, body {
     height: 100%;
 }
 
+@favorite-color: blue;
+@text-padding: .6rem;
+
+.container {
+	font-size: 62.5%;
+	margin: 0 auto;
+	padding: 1.5rem;
+	background: slateblue;
+	@media (max-width: 500px) {
+		background: darkorange;
+	}
+
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		padding-left: 1.6rem;
+		width: 80%;
+		align-content: space-around;
+		a {
+		padding: 1rem;
+		color: @favorite-color;
+		}
+	}
+
+	#foot-nav {
+		display: flex;
+		flex-direction: column;
+		a {
+			padding: @text-padding;
+		}
+		@media (max-width: 500px) {
+			display: none;
+		}
+	}
+
+	#profile-pic {
+		.profile-pic {
+		max-width: 100%;
+		width: 10%;
+		height: auto;
+		}
+		background: gray;
+		@media (max-width: 500px) {
+			background: skyblue;
+		}
+		
+	}
+
+	h2 {
+		font-size: 1.2rem;
+		padding: .6rem;
+		color: @favorite-color;
+	}
+	.top-p {
+		display: flex;
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	.mid-sec {
+		.top-p;
+		flex-direction: column;
+	}
+
+	p, ul, #contact-form {
+		padding: @text-padding
+	}
+}
+
+
+
+
